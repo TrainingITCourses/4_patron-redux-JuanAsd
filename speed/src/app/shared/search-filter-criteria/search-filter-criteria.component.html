@@ -1,0 +1,6 @@
+<div style="height: 20px">
+  <select (change)="search.emit($event.target.value)">
+    <option>--</option>
+    <option *ngFor="let criteria of criteriaList">{{ criteria }}</option>
+  </select>
+</div>

@@ -1,0 +1,8 @@
+<div>
+  <span style="font-weight: bold">Lanzamientos:</span>
+  <div *ngIf="launches !== null" style="padding-top: 10px">
+    <div *ngFor="let launch of launches" style="padding:5px">
+      {{launch.name}}
+    </div>
+  </div>
+</div>

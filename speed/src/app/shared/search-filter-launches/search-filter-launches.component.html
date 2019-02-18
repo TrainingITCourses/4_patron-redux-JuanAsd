@@ -1,0 +1,6 @@
+<div style="height: 30px;">
+  <select (change)="searchClick.emit($event.target.value)">
+    <option>--</option>
+    <option *ngFor="let launch of launchesList">{{ launch.name }}</option>
+  </select>
+</div>
